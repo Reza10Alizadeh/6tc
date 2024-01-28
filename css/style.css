@@ -169,8 +169,25 @@ background: #3a8ffd;
     width: 100%;
 display: inline-block;
 }
-@media screen and(min-width:1024px){
+@media screen and (min-width:1024px){
     .btn{
         font-size: 1.5rem;
+    }
+}
+/*inputs*/
+.input{
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+border-radius: 40px;
+outline: 0;
+color: var(--color-headings);
+font-size: 1.5rem;
+}
+::placeholder{
+    color: #cdcbd7;
+}
+@media screen and (min-width:1024px){
+    .input{
+        font-size: 2rem;
     }
 }
