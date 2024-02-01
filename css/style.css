@@ -265,5 +265,17 @@ right: 5%;
     letter-spacing: 1px;
 }
 .plan--popular{
-
+}
+/*media*/
+.media{
+    display: flex;
+}
+.media__title{
+    margin-top: 0;
+}
+.media__body{
+    margin: 0 1rem;
+}
+.media__image{
+    margin-top: 1rem;
 }
