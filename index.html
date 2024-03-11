@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="deploy your website in less than 60 seconds">
+    <title>moshify -go online for just $9 </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,18 +15,72 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <nav class="nav collapsible">
-<a href="/"><img src="icons/logo.svg" alt=""></a>
-<svg class="icon icon--white nav__toggler">
-  <use xlink:href="icons/sprite.svg#menu"></use>
-</svg>
-<ul class="list nav__list collapsible__contet">
-  <li class="nav__item"><a href="#">Hosting</a></li>
-  <li class="nav__item"><a href="#">vps</a></li>
-  <li class="nav__item"><a href="#">Domain</a></li>
-  <li class="nav__item"><a href="#">pricing</a></li>
-</ul>
-    </nav>
-    <script src="js/main.js"></script>
+    <section class="block block--dark block--skewed-right">
+      <div class=" container grid grid--cols-2">
+    <div class="block__header hero__content">
+      <h1 class="block__heading">Cloud hosting for pros</h1>
+      <p class="hero__tagline">deploy your website in less than 60 seconds</p>
+    <a href="#" class="btn btn--accent btn--stretched">Get started</a>
+    </div>
+    <img class="hero__image" src="icons/banner.png">
+      </div>
+    </section>
+    <section class="blck container block-domain">
+      <header class="block__header">
+        <h2>starting at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, sunt!
+        </p>
+      </header>
+      <div class="input-group">
+        <button class="btn btn--accent">
+          <svg class="icon icont--white">
+            <use xlink:href="icons/sprite.svg#search"></use></svg>Search
+        </button>
+        <input type="text" class="input" placeholder="Enter domain name here" />
+      </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
+    </section>
+    <div class="card testimonial">
+      <div class="grid grid--cols-2">
+        <div class="testimonial__image">
+          <img src="icons/testimonial.jpg"alt="a happy,smilling customer">
+          <span class="icon-container icon-container--accent">
+            <svg class="icon icont--white icon--smal">
+              <use xlink:href="icons/sprite.svg#quotes"></use>
+            </svg>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores exercitationem optio quo quas. Animi id quidem quis libero itaque exercitationem!
+          </p>
+        <footer><div class="media">
+          <div class="media__image">
+              <svg class="icon quote__line">
+                <use xlink:href="icons/sprite.svg#line"></use>
+              </svg>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title quote__author">John smith</h3>
+            <p class="quote__company">ABC company</p>
+          </div></footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="callout callout--primary">
+      <div class="grid grid--cols-2">
+    <div class="callout__content">
+      <h2 class="callout__heading">Ready to get started </h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus ad architecto minima eaque cupiditate quos quibusdam quod ducimus? Culpa, voluptates.</p>
+    </div>
+    <a href="#" class="btn btn--secondary btn--long">Get started</a>
+      </div>
+    </div>
   </body>
 </html>

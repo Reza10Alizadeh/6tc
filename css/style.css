@@ -26,6 +26,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 1rem;
@@ -139,7 +140,7 @@ a {
   fill: var(--color-primary);
 }
 .icon--white {
-  fill: white;
+  color: white;
 }
 .icon-container {
   background: #f3f9fa;
@@ -160,11 +161,18 @@ a {
   text-transform: uppercase;
   padding: 2rem 3rem;
   border: 0;
+  outline: 0;
   margin: 1rem 0;
   border-radius: 40px;
   white-space: nowrap;
   cursor: pointer;
   text-align: center;
+}
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 .btn--primary {
   background: var(--color-primary);
@@ -213,6 +221,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1rem 1rem;
+  padding: 1.5rem 2rem;
 }
 ::placeholder {
   color: #cdcbd7;
@@ -502,16 +511,52 @@ a {
   box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
-@media screen and (min-width: 768px){
-  .nav__toggler{
+@media screen and (min-width: 768px) {
+  .nav__toggler {
     display: none;
   }
-  .nav__list{
+  .nav__list {
     width: auto;
     display: flex;
     font-size: 1.6rem;
   }
-  .nav__item{
+  .nav__item {
     border: 0;
   }
+}
+/*Hero*/
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+/*Domain block*/
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem 0;
+}
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+}
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/*plans Block*/
+.block-plans{
+  gap: 4reem;
+}
+.block-plans .card{
+  max-width: 500px;
 }
